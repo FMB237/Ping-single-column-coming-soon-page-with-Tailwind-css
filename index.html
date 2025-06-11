@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="./src/output.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex flex-col  items-center min-h-screen">
+  <section class=" h-200 flex flex-col   items-center w-full  lg:m-3 lg:p-3  lg:h-220">
+     <img src="images/logo.svg" alt="" class="p-4 m-4  lg:h-15 lg:w-auto">
+      <p class="p-2 m-2 text-2xl font-bold color  md:text-3xl lg:text-5xl">We are launching <span class=" text-black">soon!</span> </p>
+      <p class="p-2 m-2 md:text-base lg:text-2xl"> Subscribe and get notified</p>
+
+  <form action="" class="p-2 m-2 w-full flex flex-col gap-2 md:flex-row  md:items-center md:gap-2 md:justify-center md:w-110 lg:w-200 lg:h-25  lg:gap-3 " id="input-form">
+    <div>
+       <input  type="text" name="email" id="email" class="flex-1 h-10 border-2 rounded-2xl outline-0 px-4 w-full py-2 md:w-auto lg:w-110 lg:h-15 lg:rounded-3xl" placeholder="Your email address">
+        <!-- Error message always below both input and button -->
+  <p id="error" class="color2 text-red-500 text-sm text-center w-full md:col-span-2"></p>
+    </div>
+ 
+  <button type="submit" class="px-6 py-2 text-base md:text-xl rounded-3xl shadow-2xl   color3 text-white w-full md:w-auto lg:w-60 lg:h-15 lg:cursor-pointer lg:transition lg:duration-300  lg:hover:scale-105 "id="NotifyBtn"> Notify</button>
+
+  </form>
+ 
+  
+
+   <div class="p-2 m-2 w-70 h-50 myimage md:w-90 md:h-60 lg:w-150 lg:h-90">
+    <img src="images/illustration-dashboard.png" alt="">
+   </div>
+
+   <!-- To handle web icons -->
+   <div class="w-80 h-12 flex justify-center items-center gap-6 m-3 p-3  md:p-4 md:m-4 md:w-85 md:h-15 lg:w-100 lg:h-25 lg:gap-8">
+    <i class="bx bxl-facebook border rounded-3xl p-2  cursor-pointer transition duration-300 text-2xl icon-color lg:hover:icon-color1 lg:hover:scale-120"></i>
+  <i class="bx bxl-twitter  border rounded-3xl p-2 cursor-pointer transition duration-300 text-2xl icon-color   lg:hover:scale-120"></i>
+  <i class="bx bxl-instagram  border rounded-3xl p-2 cursor-pointer transition duration-300 text-2xl icon-color  lg:hover:scale-120"></i>
+   </div>
+
+   <p class="p-2 m-2 color1 lg:text-2xl">&copy; Copyright Ping. All rights reserved.</p>
+      
+
+  <footer class="p-2 m-2 ">
+    <p class="attribution" class="lg:text-base">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="lg:text-base" >Frontend Mentor</a>. 
+      Coded by <a href="https://github/FMB237 " class="lg:text-base">Fouenang Miguel Bruce</a>.
+    </p>
+  </footer>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+  
+
+ 
+ 
+
