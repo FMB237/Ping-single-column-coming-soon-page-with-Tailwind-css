@@ -21,14 +21,32 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById('email').style.border="2px solid red";
    }
    else{
-    document.getElementById("error").innerHTML="";
-    document.getElementById('email').style.border="2px solid green";
+    //Let send some backend
+    fetch('/subscribe',{
+      method:"POST",
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email})
+    })
+    .then(res=>res.json())
+    .then(data =>{
+      if(data.error){
+        document.getElementById('error').innerHTML=data.error;
+        document.getElementById('email').style.border= "2px solid red";
+      }
+      else{
+           document.getElementById('error').innerHTML = "Subscribed!";
+           document.getElementById('error').style.color="green";
+           document.getElementById('error').style.fontSize="1.2rem";
+        document.getElementById('email').style.border = "2px solid green";
+      }
+    })
+    .catch(()=>{
+      document.getElementById('error').innerHTML="An error occured";
+      document.getElementById('email').style.border="2px solid red";
+    })
    }
 
   });
-
-  
-
-
+    
 
 });
